@@ -35,6 +35,7 @@ async def on_guild_join(guild):
 @client.command()
 async def ping(ctx):
 	await ctx.send(course.name)
+	await ctx.send("text")
 
 # getting the bot to turn on using the token
 client.run(os.getenv('TOKEN'))
